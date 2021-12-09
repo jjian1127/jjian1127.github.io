@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>基于Hugo的博客搭建 - 我的全新 Hugo 网站</title><meta name="Description" content=""><meta property="og:title" content="基于Hugo的博客搭建" />
+<meta property="og:description" content="一、安装Hugo 根据自己情况下载相应版本的 hugo ，并将解压后的文件路径添加到环境变量中。 下载地址 执行 hugo version 命令，当出现如下情况则说明安装成功。(以" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jjian1127.github.io/posts/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-09T13:34:42+08:00" />
+<meta property="article:modified_time" content="2021-12-09T13:34:42+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="基于Hugo的博客搭建"/>
+<meta name="twitter:description" content="一、安装Hugo 根据自己情况下载相应版本的 hugo ，并将解压后的文件路径添加到环境变量中。 下载地址 执行 hugo version 命令，当出现如下情况则说明安装成功。(以"/>
+<meta name="application-name" content="我的全新 Hugo 网站">
+<meta name="apple-mobile-web-app-title" content="我的全新 Hugo 网站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://jjian1127.github.io/posts/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" /><link rel="next" href="https://jjian1127.github.io/posts/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90%E8%BD%AF%E4%BB%B6/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "基于Hugo的博客搭建",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/jjian1127.github.io\/posts\/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA\/"
+        },"genre": "posts","wordcount":  1018 ,
+        "url": "https:\/\/jjian1127.github.io\/posts\/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA\/","datePublished": "2021-12-09T13:34:42+08:00","dateModified": "2021-12-09T13:34:42+08:00","publisher": {
+            "@type": "Organization",
+            "name": "作者"},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="我的全新 Hugo 网站">我的全新 Hugo 网站</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">基于Hugo的博客搭建</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>作者</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-09">2021-12-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1018 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一安装hugo">一、安装Hugo</a></li>
+        <li><a href="#二创建博客">二、创建博客</a></li>
+        <li><a href="#三设置主题">三、设置主题</a></li>
+        <li><a href="#四本地启动个人博客">四、本地启动个人博客</a></li>
+        <li><a href="#五创建第一篇文章并浏览">五、创建第一篇文章，并浏览</a></li>
+        <li><a href="#六部署博客到github中">六、部署博客到<code>github</code>中</a></li>
+        <li><a href="#七也可以部署在gitee上">七、（也可以）部署在<code>gitee</code>上</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="一安装hugo">一、安装Hugo</h3>
+<ol>
+<li>根据自己情况下载相应版本的 hugo ，并将解压后的文件路径添加到环境变量中。 <a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener noreffer">下载地址</a></li>
+<li>执行 <code>hugo version</code> 命令，当出现如下情况则说明安装成功。(以下所有指令均在Git Bash中运行)</li>
+</ol>
+<!-- raw HTML omitted -->
+<h3 id="二创建博客">二、创建博客</h3>
+<p>执行 <code>hugo new site MyBlog</code> 命令  （Moblog 为文件夹名，注意创建文件夹的路径）</p>
+<h3 id="三设置主题">三、设置主题</h3>
+<p><a href="https://themes.gohugo.io/" target="_blank" rel="noopener noreffer">点击进入Hugo主题库</a>，下载喜欢的主题，这里以 <strong>LoveIt</strong> 主题为例。</p>
+<p>将 <strong>LoveIt</strong> 主题克隆到 <code>themes</code> 目录:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> MyBlog/
+git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</code></pre></div><p>如果出现 <code>fatal: unable to access ‘https://github.com/...‘</code> 错误，可以将 <code>https</code> 换成 <code>git</code> 试一下</p>
+<!-- raw HTML omitted -->
+<p>进入该目录下的 themes 文件夹，发现已存在 <strong>LoveIt</strong> 文件夹，表示主题已经下载完成</p>
+<!-- raw HTML omitted -->
+<p>修改 <code>Moblog</code> 目录下的<code>config.toml</code>文件，配置成自己想要的格式，如（可参考<code>Moblog\themes\LoveIt\exampleSite</code>路径下的``config.toml`文件）：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="c"># [en, zh-cn, fr, ...] 设置默认的语言</span>
+<span class="nx">defaultContentLanguage</span> <span class="p">=</span> <span class="s2">&#34;zh-cn&#34;</span>
+<span class="c"># 网站语言, 仅在这里 CN 大写</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;zh-CN&#34;</span>
+<span class="c"># 是否包括中日韩文字</span>
+<span class="nx">hasCJKLanguage</span> <span class="p">=</span> <span class="kc">true</span>
+<span class="c"># 网站标题</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;我的全新 Hugo 网站&#34;</span>
+
+<span class="c"># 更改使用 Hugo 构建网站时使用的默认主题</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;LoveIt&#34;</span>
+
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+  <span class="c"># LoveIt 主题版本</span>
+  <span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;0.2.X&#34;</span>
+
+<span class="p">[</span><span class="nx">menu</span><span class="p">]</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;posts&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="c"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;文章&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/posts/&#34;</span>
+    <span class="c"># 当你将鼠标悬停在此菜单链接上时, 将显示的标题</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">1</span>
+  <span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+    <span class="nx">identifier</span> <span class="p">=</span> <span class="s2">&#34;tags&#34;</span>
+    <span class="nx">pre</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;标签&#34;</span>
+    <span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;/tags/&#34;</span>
+    <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+    <span class="nx">weight</span> <span class="p">=</span> <span class="mi">2</span>
+
+<span class="c"># Hugo 解析文档的配置</span>
+<span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
+  <span class="c"># 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)</span>
+  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">highlight</span><span class="p">]</span>
+    <span class="c"># false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)</span>
+    <span class="nx">noClasses</span> <span class="p">=</span> <span class="kc">false</span>
+
+</code></pre></div><p>有关该主题更详细的设置请参考官方文档<a href="https://hugoloveit.com/zh-cn/" target="_blank" rel="noopener noreffer">LoveIt (hugoloveit.com)</a></p>
+<h3 id="四本地启动个人博客">四、本地启动个人博客</h3>
+<p>调用指令 <code>hugo server -t LoveIt --buildDrafts </code>（或者<code>hugo serve</code>）</p>
+<!-- raw HTML omitted -->
+<p>去查看 <code>http://localhost:1313</code></p>
+<h3 id="五创建第一篇文章并浏览">五、创建第一篇文章，并浏览</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo new posts/first_post.md
+hugo serve
+</code></pre></div><p>去查看 <code>http://localhost:1313</code></p>
+<h3 id="六部署博客到github中">六、部署博客到<code>github</code>中</h3>
+<ol>
+<li>建立仓库（注意：==箭头处名称应当相同且小写==）</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="2">
+<li>输入以下代码</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo --theme<span class="o">=</span>LoveIt --baseUrl<span class="o">=</span><span class="s2">&#34;https://xxxx.github.io/&#34;</span> --buildDrafts
+<span class="nb">cd</span> public/
+git init
+git add .
+git commit -m <span class="s2">&#34;第一次提交博客
+</span><span class="s2">git remote add origin https://github.com/xxx/xxx.github.io.git
+</span><span class="s2">git push -u origin master
+</span></code></pre></div><ol start="3">
+<li>
+<p>输入用户名的密码</p>
+<p>结束部署。</p>
+</li>
+</ol>
+<h3 id="七也可以部署在gitee上">七、（也可以）部署在<code>gitee</code>上</h3>
+<ol>
+<li>
+<p>登录<code>gitee</code>，建立仓库</p>
+<!-- raw HTML omitted -->
+</li>
+<li>
+<p>复制以下地址留着备用</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>打开<code>config.toml</code>，修改<code>baseURL</code>格式为：</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;https://用户名.gitee.io&#34;</span>
+</code></pre></div><ol start="4">
+<li>初始化Hugo</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">hugo --theme<span class="o">=</span>LoveIt
+</code></pre></div><ol start="5">
+<li>进入<code>public</code>文件夹，并运行以下指令</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> public/
+git init
+git add .
+git commit -m <span class="s2">&#34;第一次提交&#34;</span>
+git remote add origin https://gitee.com/xxxxx/xxxxx.git
+git push -u origin master
+</code></pre></div><ol start="6">
+<li>第一次运行，会弹出窗口，需要登录账号与密码  ==输错一次，需要重新开始==</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="7">
+<li>刷新库，打开服务，强制使用HTTPS</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://gitee.com/jian1127/picture/raw/master/image-20211208135345050.png"
+        data-srcset="https://gitee.com/jian1127/picture/raw/master/image-20211208135345050.png, https://gitee.com/jian1127/picture/raw/master/image-20211208135345050.png 1.5x, https://gitee.com/jian1127/picture/raw/master/image-20211208135345050.png 2x"
+        data-sizes="auto"
+        alt="https://gitee.com/jian1127/picture/raw/master/image-20211208135345050.png"
+        title="image-20211208135345050" /></p>
+<ol start="8">
+<li>完成部署</li>
+</ol>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-12-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90%E8%BD%AF%E4%BB%B6/" class="next" rel="next" title="汽车电子软件">汽车电子软件<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.89.4">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
